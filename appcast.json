@@ -1,6 +1,1 @@
-{
-    "identifier": "me.missuo.copilot.translate",
-    "versions": [
-
-    ]
-}
+{ "identifier": "me.missuo.copilot.translate", "versions": [ { "version": "1.0.0", "desc": "None", "sha256": "6f6e21d5db194e1c1efc587cbf30dcce0946bf19fefd3d91d4ab2e08a2104687", "url": "https://github.com/missuo/bob-plugin-raycast/releases/download/v1.0.0/bob-plugin-raycast-1.0.0.bobplugin", "minBobVersion": "1.8.0" } ] }
