@@ -1,208 +1,248 @@
 {
-    "identifier": "me.missuo.raycast",
-    "category": "translate",
-    "version": "1.0.2",
-    "name": "Raycast AI",
-    "summary": "Powered by OwO Network Limited",
-    "author": "missuo",
-    "appcast": "https://github.com/missuo/bob-plugin-raycast/raw/main/appcast.json",
-    "homepage": "https://github.com/missuo/bob-plugin-raycast",
-    "icon": "icon.png",
-    "minBobVersion": "1.8.0",
-    "options": [
-      {
-        "identifier": "apiUrl",
-        "type": "text",
-        "title": "API URL",
-        "defaultValue": "https://raycast.owo.nz",
-        "desc": "Please enter the API URL",
-        "textConfig": {
-          "type": "visible"
-        }
-      },
-      {
-        "identifier": "apiKey",
-        "type": "text",
-        "title": "API Key",
-        "defaultValue": "",
-        "desc": "Please enter the API Key"
-      },
-      {
-        "identifier": "model",
-        "type": "menu",
-        "title": "Model",
-        "defaultValue": "gpt-4o",
-        "menuValues": [
-          {
-            "title": "GPT-4",
-            "value": "gpt-4"
-          },
-          {
-            "title": "GPT-4 Turbo",
-            "value": "gpt-4-turbo"
-          },
-          {
-            "title": "GPT-4o",
-            "value": "gpt-4o"
-          },
-          {
-            "title": "GPT-4o Mini",
-            "value": "gpt-4o-mini"
-          },
-          {
-            "title": "Raycast Model 1",
-            "value": "ray1"
-          },
-          {
-            "title": "Raycast Model 1 Mini",
-            "value": "ray1-mini"
-          },
-          {
-            "title": "O1 Preview",
-            "value": "o1-preview"
-          },
-          {
-            "title": "O1 Mini",
-            "value": "o1-mini"
-          },
-          {
-            "title": "O1 2024-12-17",
-            "value": "o1-2024-12-17"
-          },
-          {
-            "title": "O3 Mini",
-            "value": "o3-mini"
-          },
-          {
-            "title": "Claude 3.5 Haiku Latest",
-            "value": "claude-3-5-haiku-latest"
-          },
-          {
-            "title": "Claude 3.5 Sonnet Latest",
-            "value": "claude-3-5-sonnet-latest"
-          },
-          {
-            "title": "Claude 3.7 Sonnet Latest",
-            "value": "claude-3-7-sonnet-latest"
-          },
-          {
-            "title": "Claude 3 Opus 20240229",
-            "value": "claude-3-opus-20240229"
-          },
-          {
-            "title": "Sonar",
-            "value": "sonar"
-          },
-          {
-            "title": "Sonar Pro",
-            "value": "sonar-pro"
-          },
-          {
-            "title": "Sonar Reasoning",
-            "value": "sonar-reasoning"
-          },
-          {
-            "title": "Sonar Reasoning Pro",
-            "value": "sonar-reasoning-pro"
-          },
-          {
-            "title": "Llama 3.3 70B Versatile",
-            "value": "llama-3.3-70b-versatile"
-          },
-          {
-            "title": "Llama 3.1 8B Instant",
-            "value": "llama-3.1-8b-instant"
-          },
-          {
-            "title": "Llama 3 70B 8192",
-            "value": "llama3-70b-8192"
-          },
-          {
-            "title": "Meta Llama 3.1 405B Instruct Turbo",
-            "value": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo"
-          },
-          {
-            "title": "Open Mistral Nemo",
-            "value": "open-mistral-nemo"
-          },
-          {
-            "title": "Mistral Large Latest",
-            "value": "mistral-large-latest"
-          },
-          {
-            "title": "Mistral Small Latest",
-            "value": "mistral-small-latest"
-          },
-          {
-            "title": "Codestral Latest",
-            "value": "codestral-latest"
-          },
-          {
-            "title": "DeepSeek R1 Distill Llama 70B",
-            "value": "deepseek-r1-distill-llama-70b"
-          },
-          {
-            "title": "Gemini 1.5 Flash",
-            "value": "gemini-1.5-flash"
-          },
-          {
-            "title": "Gemini 1.5 Pro",
-            "value": "gemini-1.5-pro"
-          },
-          {
-            "title": "Gemini 2.0 Flash",
-            "value": "gemini-2.0-flash"
-          },
-          {
-            "title": "Gemini 2.0 Flash Thinking Exp 01-21",
-            "value": "gemini-2.0-flash-thinking-exp-01-21"
-          },
-          {
-            "title": "DeepSeek AI DeepSeek R1",
-            "value": "deepseek-ai/DeepSeek-R1"
-          },
-          {
-            "title": "Grok 2 Latest",
-            "value": "grok-2-latest"
-          }
-        ]
-      },      
-      {
-        "identifier": "mode",
-        "type": "menu",
-        "title": "Mode",
-        "defaultValue": "1",
-        "desc": "Please select the mode",
-        "menuValues": [
-          {
-            "title": "Translate",
-            "value": "1"
-          },
-          {
-            "title": "Polish",
-            "value": "2"
-          },
-          {
-            "title": "Ask",
-            "value": "3"
-          },
-          {
-            "title": "Custom",
-            "value": "4"
-          }
-        ]
-      },
-      {
-        "identifier": "customizePrompt",
-        "type": "text",
-        "title": "Custom Prompt",
-        "defaultValue": "",
-        "desc": "Only when the mode is selected as Custom will it take effect",
-        "textConfig": {
-          "type": "visible",
-          "height": "80",
-          "placeholderText": "Translate the content directly, without missing any information"
-        }
+  "identifier": "me.missuo.raycast",
+  "category": "translate",
+  "version": "1.0.3",
+  "name": "Raycast AI",
+  "summary": "Powered by OwO Network Limited",
+  "author": "missuo",
+  "appcast": "https://github.com/missuo/bob-plugin-raycast/raw/main/appcast.json",
+  "homepage": "https://github.com/missuo/bob-plugin-raycast",
+  "icon": "icon.png",
+  "minBobVersion": "1.8.0",
+  "options": [
+    {
+      "identifier": "apiUrl",
+      "type": "text",
+      "title": "API URL",
+      "defaultValue": "https://raycast.owo.nz",
+      "desc": "Please enter the API URL",
+      "textConfig": {
+        "type": "visible"
       }
-    ]
-  }
+    },
+    {
+      "identifier": "apiKey",
+      "type": "text",
+      "title": "API Key",
+      "defaultValue": "",
+      "desc": "Please enter the API Key"
+    },
+    {
+      "identifier": "model",
+      "type": "menu",
+      "title": "Model",
+      "defaultValue": "gpt-4.1",
+      "menuValues": [
+        {
+          "title": "claude-3-5-haiku-latest",
+          "value": "claude-3-5-haiku-latest"
+        },
+        {
+          "title": "claude-3-5-sonnet-latest",
+          "value": "claude-3-5-sonnet-latest"
+        },
+        {
+          "title": "claude-3-7-sonnet-latest",
+          "value": "claude-3-7-sonnet-latest"
+        },
+        {
+          "title": "claude-3-7-sonnet-latest-reasoning",
+          "value": "claude-3-7-sonnet-latest-reasoning"
+        },
+        {
+          "title": "claude-3-opus-20240229",
+          "value": "claude-3-opus-20240229"
+        },
+        {
+          "title": "codestral-latest",
+          "value": "codestral-latest"
+        },
+        {
+          "title": "deepseek-ai/DeepSeek-R1",
+          "value": "deepseek-ai/DeepSeek-R1"
+        },
+        {
+          "title": "deepseek-ai/DeepSeek-V3",
+          "value": "deepseek-ai/DeepSeek-V3"
+        },
+        {
+          "title": "deepseek-r1-distill-llama-70b",
+          "value": "deepseek-r1-distill-llama-70b"
+        },
+        {
+          "title": "gemini-1.5-flash",
+          "value": "gemini-1.5-flash"
+        },
+        {
+          "title": "gemini-1.5-pro",
+          "value": "gemini-1.5-pro"
+        },
+        {
+          "title": "gemini-2.0-flash",
+          "value": "gemini-2.0-flash"
+        },
+        {
+          "title": "gemini-2.0-flash-thinking-exp-01-21",
+          "value": "gemini-2.0-flash-thinking-exp-01-21"
+        },
+        {
+          "title": "gemini-2.5-pro-preview-03-25",
+          "value": "gemini-2.5-pro-preview-03-25"
+        },
+        {
+          "title": "gpt-4",
+          "value": "gpt-4"
+        },
+        {
+          "title": "gpt-4-turbo",
+          "value": "gpt-4-turbo"
+        },
+        {
+          "title": "gpt-4.1",
+          "value": "gpt-4.1"
+        },
+        {
+          "title": "gpt-4.1-mini",
+          "value": "gpt-4.1-mini"
+        },
+        {
+          "title": "gpt-4.1-nano",
+          "value": "gpt-4.1-nano"
+        },
+        {
+          "title": "gpt-4o",
+          "value": "gpt-4o"
+        },
+        {
+          "title": "gpt-4o-mini",
+          "value": "gpt-4o-mini"
+        },
+        {
+          "title": "grok-2-latest",
+          "value": "grok-2-latest"
+        },
+        {
+          "title": "grok-3-fast-beta",
+          "value": "grok-3-fast-beta"
+        },
+        {
+          "title": "grok-3-mini-fast-beta",
+          "value": "grok-3-mini-fast-beta"
+        },
+        {
+          "title": "llama-3.1-8b-instant",
+          "value": "llama-3.1-8b-instant"
+        },
+        {
+          "title": "llama-3.3-70b-versatile",
+          "value": "llama-3.3-70b-versatile"
+        },
+        {
+          "title": "llama3-70b-8192",
+          "value": "llama3-70b-8192"
+        },
+        {
+          "title": "meta-llama/llama-4-scout-17b-16e-instruct",
+          "value": "meta-llama/llama-4-scout-17b-16e-instruct"
+        },
+        {
+          "title": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+          "value": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo"
+        },
+        {
+          "title": "mistral-large-latest",
+          "value": "mistral-large-latest"
+        },
+        {
+          "title": "mistral-small-latest",
+          "value": "mistral-small-latest"
+        },
+        {
+          "title": "o1-2024-12-17",
+          "value": "o1-2024-12-17"
+        },
+        {
+          "title": "o1-mini",
+          "value": "o1-mini"
+        },
+        {
+          "title": "o1-preview",
+          "value": "o1-preview"
+        },
+        {
+          "title": "o3-mini",
+          "value": "o3-mini"
+        },
+        {
+          "title": "open-mistral-nemo",
+          "value": "open-mistral-nemo"
+        },
+        {
+          "title": "qwen-2.5-32b",
+          "value": "qwen-2.5-32b"
+        },
+        {
+          "title": "ray1",
+          "value": "ray1"
+        },
+        {
+          "title": "ray1-mini",
+          "value": "ray1-mini"
+        },
+        {
+          "title": "sonar",
+          "value": "sonar"
+        },
+        {
+          "title": "sonar-pro",
+          "value": "sonar-pro"
+        },
+        {
+          "title": "sonar-reasoning",
+          "value": "sonar-reasoning"
+        },
+        {
+          "title": "sonar-reasoning-pro",
+          "value": "sonar-reasoning-pro"
+        }
+      ]
+    },
+    {
+      "identifier": "mode",
+      "type": "menu",
+      "title": "Mode",
+      "defaultValue": "1",
+      "desc": "Please select the mode",
+      "menuValues": [
+        {
+          "title": "Translate",
+          "value": "1"
+        },
+        {
+          "title": "Polish",
+          "value": "2"
+        },
+        {
+          "title": "Ask",
+          "value": "3"
+        },
+        {
+          "title": "Custom",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "identifier": "customizePrompt",
+      "type": "text",
+      "title": "Custom Prompt",
+      "defaultValue": "",
+      "desc": "Only when the mode is selected as Custom will it take effect",
+      "textConfig": {
+        "type": "visible",
+        "height": "80",
+        "placeholderText": "Translate the content directly, without missing any information"
+      }
+    }
+  ]
+}
