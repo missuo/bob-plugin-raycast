@@ -1,7 +1,7 @@
 {
   "identifier": "me.missuo.raycast",
   "category": "translate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "Raycast AI",
   "summary": "Powered by OwO Network Limited",
   "author": "missuo",
@@ -14,7 +14,7 @@
       "identifier": "apiUrl",
       "type": "text",
       "title": "API URL",
-      "defaultValue": "https://raycast.owo.nz",
+      "defaultValue": "https://api.missuo.ru",
       "desc": "Please enter the API URL",
       "textConfig": {
         "type": "visible"
@@ -86,6 +86,10 @@
           "value": "gemini-2.0-flash-thinking-exp-01-21"
         },
         {
+           "title": "gemini-2.5-flash-preview-04-17",
+           "value": "gemini-2.5-flash-preview-04-17"
+        },
+        {
           "title": "gemini-2.5-pro-preview-03-25",
           "value": "gemini-2.5-pro-preview-03-25"
         },
@@ -142,12 +146,12 @@
           "value": "llama3-70b-8192"
         },
         {
-          "title": "meta-llama/llama-4-scout-17b-16e-instruct",
-          "value": "meta-llama/llama-4-scout-17b-16e-instruct"
+           "title": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+           "value": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo"
         },
         {
-          "title": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
-          "value": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo"
+           "title": "meta-llama/llama-4-scout-17b-16e-instruct",
+           "value": "meta-llama/llama-4-scout-17b-16e-instruct"
         },
         {
           "title": "mistral-large-latest",
@@ -158,28 +162,36 @@
           "value": "mistral-small-latest"
         },
         {
-          "title": "o1-2024-12-17",
-          "value": "o1-2024-12-17"
+           "title": "o1-2024-12-17",
+           "value": "o1-2024-12-17"
         },
         {
-          "title": "o1-mini",
-          "value": "o1-mini"
+           "title": "o1-mini",
+           "value": "o1-mini"
         },
         {
-          "title": "o1-preview",
-          "value": "o1-preview"
+           "title": "o1-preview",
+           "value": "o1-preview"
         },
         {
-          "title": "o3-mini",
-          "value": "o3-mini"
+           "title": "o3",
+           "value": "o3"
+        },
+        {
+           "title": "o3-mini",
+           "value": "o3-mini"
+        },
+        {
+           "title": "o4-mini",
+           "value": "o4-mini"
         },
         {
           "title": "open-mistral-nemo",
           "value": "open-mistral-nemo"
         },
         {
-          "title": "qwen-2.5-32b",
-          "value": "qwen-2.5-32b"
+           "title": "qwen-2.5-32b",
+           "value": "qwen-2.5-32b"
         },
         {
           "title": "ray1",
