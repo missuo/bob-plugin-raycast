@@ -21,6 +21,13 @@
       }
     },
     {
+      "identifier": "apiKey",
+      "type": "text",
+      "title": "API Key",
+      "defaultValue": "",
+      "desc": "Please enter the API Key"
+    },
+    {
       "identifier": "model",
       "type": "menu",
       "title": "Model",
