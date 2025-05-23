@@ -1,7 +1,7 @@
 {
   "identifier": "me.missuo.raycast",
   "category": "translate",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "name": "Raycast AI",
   "summary": "Powered by OwO Network Limited",
   "author": "missuo",
@@ -19,13 +19,6 @@
       "textConfig": {
         "type": "visible"
       }
-    },
-    {
-      "identifier": "apiKey",
-      "type": "text",
-      "title": "API Key",
-      "defaultValue": "",
-      "desc": "Please enter the API Key"
     },
     {
       "identifier": "model",
@@ -52,6 +45,18 @@
         {
           "title": "claude-3-opus-20240229",
           "value": "claude-3-opus-20240229"
+        },
+        {
+          "title": "claude-opus-4-20250514",
+          "value": "claude-opus-4-20250514"
+        },
+        {
+          "title": "claude-sonnet-4-20250514",
+          "value": "claude-sonnet-4-20250514"
+        },
+        {
+          "title": "claude-sonnet-4-20250514-reasoning",
+          "value": "claude-sonnet-4-20250514-reasoning"
         },
         {
           "title": "codestral-latest",
@@ -188,10 +193,6 @@
         {
           "title": "open-mistral-nemo",
           "value": "open-mistral-nemo"
-        },
-        {
-           "title": "qwen-2.5-32b",
-           "value": "qwen-2.5-32b"
         },
         {
           "title": "ray1",
