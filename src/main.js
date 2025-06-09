@@ -2,7 +2,7 @@
  * @Author: Vincent Yang
  * @Date: 2025-04-04 17:32:34
  * @LastEditors: Vincent Yang
- * @LastEditTime: 2025-04-04 17:38:21
+ * @LastEditTime: 2025-06-09 11:16:53
  * @FilePath: /bob-plugin-raycast/src/main.js
  * @Telegram: https://t.me/missuo
  * @GitHub: https://github.com/missuo
@@ -24,15 +24,15 @@ function buildHeader(apiKey) {
   };
 }
 
-function generatePrompts(query, mode, customizePrompt) {
-  let userPrompt = ""
+function generateSystemPrompt(mode, customizePrompt, query) {
+  let systemPrompt = ""
   if (mode === "1") {
-    let translationPrompt =`'Please translate below text within """.Your results should not contain """, just output the translated content. And here's the content`
+    let translationPrompt = `Please translate the user's text. Your results should only contain the translated content, no additional explanation.`
 
-    userPrompt = `${translationPrompt} from "${lang.langMap.get(query.detectFrom) || query.detectFrom}" to "${lang.langMap.get(query.detectTo) || query.detectTo}".`;
+    systemPrompt = `${translationPrompt} Translate from "${lang.langMap.get(query.detectFrom) || query.detectFrom}" to "${lang.langMap.get(query.detectTo) || query.detectTo}".`;
 
     if (query.detectTo === "wyw" || query.detectTo === "yue") {
-      userPrompt = `${translationPrompt} to "${lang.langMap.get(query.detectTo) || query.detectTo}".`;
+      systemPrompt = `${translationPrompt} Translate to "${lang.langMap.get(query.detectTo) || query.detectTo}".`;
     }
 
     if (
@@ -41,36 +41,41 @@ function generatePrompts(query, mode, customizePrompt) {
       query.detectFrom === "zh-Hant"
     ) {
       if (query.detectTo === "zh-Hant") {
-        userPrompt = `${translationPrompt} to traditional Chinese.`;
+        systemPrompt = `${translationPrompt} Translate to traditional Chinese.`;
       } else if (query.detectTo === "zh-Hans") {
-        userPrompt = `${translationPrompt} to simplified Chinese.`;
+        systemPrompt = `${translationPrompt} Translate to simplified Chinese.`;
       } else if (query.detectTo === "yue") {
-        userPrompt = `${translationPrompt} to Cantonese.`;
+        systemPrompt = `${translationPrompt} Translate to Cantonese.`;
       }
     }
   }
   else if (mode === "2") {
-    userPrompt = `Please polish this sentence without changing its original meaning`;
+    systemPrompt = `Please polish the user's sentence without changing its original meaning. Only return the polished text.`;
   }
   else if (mode === "3") {
-    userPrompt = `Please answer the following question`;
+    systemPrompt = `Please answer the user's question.`;
   }
   else if (mode === "4") {
-    userPrompt = customizePrompt
+    systemPrompt = customizePrompt
   }
 
-  userPrompt = `${userPrompt}:\n"""${query.text}"""`
-  return userPrompt;
+  return systemPrompt;
 }
 
 function buildRequestBody(model, mode, customizePrompt, query) {
-  const prompt = generatePrompts(query, mode, customizePrompt);
+  const systemPrompt = generateSystemPrompt(mode, customizePrompt, query);
   return {
     model,
-    messages: [{
-      "role": "system",
-      "content": ` ${prompt}`
-    }]
+    messages: [
+      {
+        "role": "system",
+        "content": systemPrompt
+      },
+      {
+        "role": "user",
+        "content": query.text
+      }
+    ]
   };
 }
 
@@ -143,7 +148,7 @@ function translate(query) {
 
   const {
     model,
-    apiUrl = 'https://raycast.owo.nz',
+    apiUrl = 'https://api.missuo.ru',
     mode,
     apiKey,
     customizePrompt
