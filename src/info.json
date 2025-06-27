@@ -1,7 +1,7 @@
 {
   "identifier": "me.missuo.raycast",
   "category": "translate",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "name": "Raycast AI",
   "summary": "Powered by OwO Network Limited",
   "author": "missuo",
@@ -33,198 +33,48 @@
       "title": "Model",
       "defaultValue": "gpt-4.1",
       "menuValues": [
-        {
-          "title": "claude-3-5-haiku-latest",
-          "value": "claude-3-5-haiku-latest"
-        },
-        {
-          "title": "claude-3-5-sonnet-latest",
-          "value": "claude-3-5-sonnet-latest"
-        },
-        {
-          "title": "claude-3-7-sonnet-latest",
-          "value": "claude-3-7-sonnet-latest"
-        },
-        {
-          "title": "claude-3-7-sonnet-latest-reasoning",
-          "value": "claude-3-7-sonnet-latest-reasoning"
-        },
-        {
-          "title": "claude-3-opus-20240229",
-          "value": "claude-3-opus-20240229"
-        },
-        {
-          "title": "claude-opus-4-20250514",
-          "value": "claude-opus-4-20250514"
-        },
-        {
-          "title": "claude-opus-4-20250514-reasoning",
-          "value": "claude-opus-4-20250514-reasoning"
-        },
-        {
-          "title": "claude-sonnet-4-20250514",
-          "value": "claude-sonnet-4-20250514"
-        },
-        {
-          "title": "claude-sonnet-4-20250514-reasoning",
-          "value": "claude-sonnet-4-20250514-reasoning"
-        },
-        {
-          "title": "codestral-latest",
-          "value": "codestral-latest"
-        },
-        {
-          "title": "deepseek-ai/DeepSeek-R1",
-          "value": "deepseek-ai/DeepSeek-R1"
-        },
-        {
-          "title": "deepseek-ai/DeepSeek-V3",
-          "value": "deepseek-ai/DeepSeek-V3"
-        },
-        {
-          "title": "deepseek-r1-distill-llama-70b",
-          "value": "deepseek-r1-distill-llama-70b"
-        },
-        {
-          "title": "gemini-1.5-flash",
-          "value": "gemini-1.5-flash"
-        },
-        {
-          "title": "gemini-2.0-flash",
-          "value": "gemini-2.0-flash"
-        },
-        {
-          "title": "gemini-2.0-flash-thinking-exp-01-21",
-          "value": "gemini-2.0-flash-thinking-exp-01-21"
-        },
-        {
-          "title": "gemini-2.5-flash-preview-04-17",
-          "value": "gemini-2.5-flash-preview-04-17"
-        },
-        {
-          "title": "gemini-2.5-pro-preview-06-05",
-          "value": "gemini-2.5-pro-preview-06-05"
-        },
-        {
-          "title": "gpt-4",
-          "value": "gpt-4"
-        },
-        {
-          "title": "gpt-4-turbo",
-          "value": "gpt-4-turbo"
-        },
-        {
-          "title": "gpt-4.1",
-          "value": "gpt-4.1"
-        },
-        {
-          "title": "gpt-4.1-mini",
-          "value": "gpt-4.1-mini"
-        },
-        {
-          "title": "gpt-4.1-nano",
-          "value": "gpt-4.1-nano"
-        },
-        {
-          "title": "gpt-4o",
-          "value": "gpt-4o"
-        },
-        {
-          "title": "gpt-4o-mini",
-          "value": "gpt-4o-mini"
-        },
-        {
-          "title": "grok-2-latest",
-          "value": "grok-2-latest"
-        },
-        {
-          "title": "grok-3-fast-beta",
-          "value": "grok-3-fast-beta"
-        },
-        {
-          "title": "grok-3-mini-fast-beta",
-          "value": "grok-3-mini-fast-beta"
-        },
-        {
-          "title": "llama-3.1-8b-instant",
-          "value": "llama-3.1-8b-instant"
-        },
-        {
-          "title": "llama-3.3-70b-versatile",
-          "value": "llama-3.3-70b-versatile"
-        },
-        {
-          "title": "llama3-70b-8192",
-          "value": "llama3-70b-8192"
-        },
-        {
-          "title": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
-          "value": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo"
-        },
-        {
-          "title": "meta-llama/llama-4-scout-17b-16e-instruct",
-          "value": "meta-llama/llama-4-scout-17b-16e-instruct"
-        },
-        {
-          "title": "mistral-large-latest",
-          "value": "mistral-large-latest"
-        },
-        {
-          "title": "mistral-medium-latest",
-          "value": "mistral-medium-latest"
-        },
-        {
-          "title": "mistral-small-latest",
-          "value": "mistral-small-latest"
-        },
-        {
-          "title": "o1-2024-12-17",
-          "value": "o1-2024-12-17"
-        },
-        {
-          "title": "o1-mini",
-          "value": "o1-mini"
-        },
-        {
-          "title": "o3",
-          "value": "o3"
-        },
-        {
-          "title": "o3-mini",
-          "value": "o3-mini"
-        },
-        {
-          "title": "o4-mini",
-          "value": "o4-mini"
-        },
-        {
-          "title": "open-mistral-nemo",
-          "value": "open-mistral-nemo"
-        },
-        {
-          "title": "ray1",
-          "value": "ray1"
-        },
-        {
-          "title": "ray1-mini",
-          "value": "ray1-mini"
-        },
-        {
-          "title": "sonar",
-          "value": "sonar"
-        },
-        {
-          "title": "sonar-pro",
-          "value": "sonar-pro"
-        },
-        {
-          "title": "sonar-reasoning",
-          "value": "sonar-reasoning"
-        },
-        {
-          "title": "sonar-reasoning-pro",
-          "value": "sonar-reasoning-pro"
-        }
+        { "title": "openai-gpt-4", "value": "openai-gpt-4" },
+        { "title": "openai-gpt-4-turbo", "value": "openai-gpt-4-turbo" },
+        { "title": "openai-gpt-4.1", "value": "openai-gpt-4.1" },
+        { "title": "openai-gpt-4.1-nano", "value": "openai-gpt-4.1-nano" },
+        { "title": "openai-gpt-4.1-mini", "value": "openai-gpt-4.1-mini" },
+        { "title": "openai-gpt-4o", "value": "openai-gpt-4o" },
+        { "title": "openai-gpt-4o-mini", "value": "openai-gpt-4o-mini" },
+        { "title": "openai_o1-o3-mini", "value": "openai_o1-o3-mini" },
+        { "title": "openai_o1-o4-mini", "value": "openai_o1-o4-mini" },
+        { "title": "openai_o1-o1", "value": "openai_o1-o1" },
+        { "title": "openai_o1-o3", "value": "openai_o1-o3" },
+        { "title": "anthropic-claude-haiku", "value": "anthropic-claude-haiku" },
+        { "title": "anthropic-claude-opus", "value": "anthropic-claude-opus" },
+        { "title": "anthropic-claude-sonnet", "value": "anthropic-claude-sonnet" },
+        { "title": "anthropic-claude-3-7-sonnet-latest", "value": "anthropic-claude-3-7-sonnet-latest" },
+        { "title": "anthropic-claude-sonnet-4", "value": "anthropic-claude-sonnet-4" },
+        { "title": "anthropic-claude-opus-4", "value": "anthropic-claude-opus-4" },
+        { "title": "mistral-nemo", "value": "mistral-nemo" },
+        { "title": "mistral-large", "value": "mistral-large" },
+        { "title": "mistral-mistral-medium-latest", "value": "mistral-mistral-medium-latest" },
+        { "title": "mistral-small", "value": "mistral-small" },
+        { "title": "mistral-codestral", "value": "mistral-codestral" },
+        { "title": "groq-llama-3.3-70b-versatile", "value": "groq-llama-3.3-70b-versatile" },
+        { "title": "llama3.1-8b", "value": "llama3.1-8b" },
+        { "title": "llama3.1-405b", "value": "llama3.1-405b" },
+        { "title": "groq-meta-llama/llama-4-scout-17b-16e-instruct", "value": "groq-meta-llama/llama-4-scout-17b-16e-instruct" },
+        { "title": "perplexity-sonar", "value": "perplexity-sonar" },
+        { "title": "perplexity-sonar-pro", "value": "perplexity-sonar-pro" },
+        { "title": "perplexity-sonar-reasoning", "value": "perplexity-sonar-reasoning" },
+        { "title": "perplexity-sonar-reasoning-pro", "value": "perplexity-sonar-reasoning-pro" },
+        { "title": "together-deepseek-ai/DeepSeek-R1", "value": "together-deepseek-ai/DeepSeek-R1" },
+        { "title": "together-deepseek-ai/DeepSeek-V3", "value": "together-deepseek-ai/DeepSeek-V3" },
+        { "title": "groq-deepseek-r1-distill-llama-70b", "value": "groq-deepseek-r1-distill-llama-70b" },
+        { "title": "google-gemini-2.0-flash", "value": "google-gemini-2.0-flash" },
+        { "title": "google-gemini-2.0-flash-thinking", "value": "google-gemini-2.0-flash-thinking" },
+        { "title": "google-gemini-2.5-flash", "value": "google-gemini-2.5-flash" },
+        { "title": "google-gemini-2.5-pro", "value": "google-gemini-2.5-pro" },
+        { "title": "xai-grok-2-latest", "value": "xai-grok-2-latest" },
+        { "title": "xai-grok-3", "value": "xai-grok-3" },
+        { "title": "xai-grok-3-mini", "value": "xai-grok-3-mini" },
+        { "title": "llama2-70b", "value": "llama2-70b" },
+        { "title": "codellama-70b-instruct", "value": "codellama-70b-instruct" }
       ]
     },
     {
